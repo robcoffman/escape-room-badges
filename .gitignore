@@ -1,0 +1,12 @@
+# Real credentials - never commit these. Copy the .example.json files instead.
+spotify_config.json
+hubitat_config.json
+
+# Python
+__pycache__/
+*.pyc
+
+# Local virtual environment (recreate it, don't commit it)
+nfc/
+venv/
+.venv/

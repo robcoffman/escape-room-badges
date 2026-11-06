@@ -1,0 +1,18 @@
+[Unit]
+Description=Escape Room Badge Scanner
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Environment=PYTHONUNBUFFERED=1
+Type=simple
+User=rob
+WorkingDirectory=/home/rob/Piproject
+ExecStart=/home/rob/Piproject/nfc/bin/python /home/rob/Piproject/badges.py
+Restart=on-failure
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

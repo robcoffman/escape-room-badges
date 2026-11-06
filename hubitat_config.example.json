@@ -1,0 +1,4 @@
+{
+  "url": "http://<hubitat-hub-ip>/apps/api/<maker-api-app-id>/devices/<device-id>/on",
+  "access_token": "your-hubitat-maker-api-access-token"
+}
